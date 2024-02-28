@@ -52,29 +52,29 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.only(top: size.height * 0.68),
-                  child: SizedBox(
-                    width: 142.72,
-                    height: 12,
-                    child: Transform(
-                      transform: Matrix4.identity()
-                        ..translate(0.0, 0.0)
-                        ..rotateZ(-1.57),
-                      child: Text(
-                        'PLANTER STYLE',
-                        textAlign: TextAlign.right,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 11,
-                          fontFamily: 'Monument',
-                          fontWeight: FontWeight.w400,
-                          letterSpacing: 0.22,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
+                // Container(
+                //   margin: EdgeInsets.only(top: size.height * 0.68),
+                //   child: SizedBox(
+                //     width: 142.72,
+                //     height: 12,
+                //     child: Transform(
+                //       transform: Matrix4.identity()
+                //         ..translate(0.0, 0.0)
+                //         ..rotateZ(-1.57),
+                //       child: Text(
+                //         'PLANTER STYLE',
+                //         textAlign: TextAlign.right,
+                //         style: TextStyle(
+                //           color: Colors.white,
+                //           fontSize: 11,
+                //           fontFamily: 'Monument',
+                //           fontWeight: FontWeight.w400,
+                //           letterSpacing: 0.22,
+                //         ),
+                //       ),
+                //     ),
+                //   ),
+                // ),
                 Spacer(),
                 Center(
                   child: Text(
