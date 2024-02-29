@@ -49,15 +49,15 @@ class BestSellers extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        // DropDowns(
-                        //   text: 'FEATURES',
-                        // ),
-                        // DropDowns(
-                        //   text: 'VARIETY',
-                        // ),
-                        // DropDowns(
-                        //   text: 'SIZE',
-                        // )
+                        DropDowns(
+                          text: 'FEATURES',
+                        ),
+                        DropDowns(
+                          text: 'VARIETY',
+                        ),
+                        DropDowns(
+                          text: 'SIZE',
+                        )
                       ],
                     ),
                   ),
