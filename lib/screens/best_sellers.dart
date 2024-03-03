@@ -91,17 +91,17 @@ class BestSellers extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              Text(
-                                'Parlor \nPalm',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF5B5249),
-                                  fontSize: 12,
-                                  fontFamily: 'Monument',
-                                  fontWeight: FontWeight.w400,
-                                  letterSpacing: 0.24,
-                                ),
-                              )
+                              // Text(
+                              //   'Parlor \nPalm',
+                              //   textAlign: TextAlign.center,
+                              //   style: TextStyle(
+                              //     color: Color(0xFF5B5249),
+                              //     fontSize: 12,
+                              //     fontFamily: 'Monument',
+                              //     fontWeight: FontWeight.w400,
+                              //     letterSpacing: 0.24,
+                              //   ),
+                              // )
                             ],
                           ),
                           Container(
