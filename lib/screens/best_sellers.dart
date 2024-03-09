@@ -303,16 +303,16 @@ class BestSellers extends StatelessWidget {
                             SizedBox(width: 10),
                             SvgPicture.asset('assets/images/c_line.svg'),
                             SizedBox(width: 10),
-                            // Text(
-                            //   '2',
-                            //   style: TextStyle(
-                            //     color: Colors.white,
-                            //     fontSize: 12,
-                            //     fontFamily: 'Monument',
-                            //     fontWeight: FontWeight.w400,
-                            //     letterSpacing: 0.24,
-                            //   ),
-                            // ),
+                            Text(
+                              '2',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                                fontFamily: 'Monument',
+                                fontWeight: FontWeight.w400,
+                                letterSpacing: 0.24,
+                              ),
+                            ),
                           ],
                         ),
                       ),
