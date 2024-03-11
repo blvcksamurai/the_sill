@@ -47,13 +47,42 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    width: size.width,
-                    height: size.height * 0.30,
-                    child: Image(
-                      image: AssetImage('assets/images/leaf.png'),
-                      fit: BoxFit.fill,
-                    ),
+                  Stack(
+                    children: [
+                      Container(
+                        width: size.width,
+                        height: size.height * 0.30,
+                        child: Image(
+                          image: AssetImage('assets/images/leaf.png'),
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Center(
+                              child: SizedBox(
+                                width: 165,
+                                height: 50,
+                                child: Text(
+                                  'Faux Calathea Orbifolia',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontFamily: 'Monument',
+                                    fontWeight: FontWeight.w400,
+                                    letterSpacing: 0.20,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   )
                 ],
               ),
