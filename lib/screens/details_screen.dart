@@ -129,6 +129,19 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+                child: Center(
+                  child: Text(
+                    '- 10%',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontFamily: 'Monument',
+                      fontWeight: FontWeight.w400,
+                      letterSpacing: 0.24,
+                    ),
+                  ),
+                ),
               ),
             )
           ],
