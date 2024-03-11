@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -56,29 +57,6 @@ class DetailsScreen extends StatelessWidget {
             ],
           ),
         ),
-        Container(
-          width: size.width,
-          height: size.height,
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SvgPicture.asset('assets/images/sill.svg'),
-                  InkWell(
-                      onTap: () {
-                        // Navigator.push(
-                        //     context,
-                        //     PageRouteBuilder(
-                        //         pageBuilder: (context, a, b) =>
-                        //             BestSellers()));
-                      },
-                      child: SvgPicture.asset('assets/images/union.svg')),
-                ],
-              ),
-            ],
-          ),
-        )
       ],
     ));
   }
