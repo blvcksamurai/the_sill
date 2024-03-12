@@ -57,42 +57,42 @@ class DetailsScreen extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                      // Column(
-                      //   mainAxisAlignment: MainAxisAlignment.center,
-                      //   children: [
-                      //     Center(
-                      //       child: SizedBox(
-                      //         width: 165,
-                      //         height: 50,
-                      //         child: Text(
-                      //           'Faux Calathea Orbifolia',
-                      //           textAlign: TextAlign.center,
-                      //           style: TextStyle(
-                      //             color: Colors.white,
-                      //             fontSize: 14,
-                      //             fontFamily: 'Monument',
-                      //             fontWeight: FontWeight.w400,
-                      //             letterSpacing: 0.20,
-                      //           ),
-                      //         ),
-                      //       ),
-                      //     ),
-                      //     Opacity(
-                      //       opacity: 0.30,
-                      //       child: Text(
-                      //         'LARGE / PROSPECT / PALE GREY',
-                      //         textAlign: TextAlign.center,
-                      //         style: TextStyle(
-                      //           color: Colors.white,
-                      //           fontSize: 12,
-                      //           fontFamily: 'Monument',
-                      //           fontWeight: FontWeight.w400,
-                      //           letterSpacing: 0.24,
-                      //         ),
-                      //       ),
-                      //     )
-                      //   ],
-                      // ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Center(
+                            child: SizedBox(
+                              width: 165,
+                              height: 50,
+                              child: Text(
+                                'Faux Calathea Orbifolia',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Monument',
+                                  fontWeight: FontWeight.w400,
+                                  letterSpacing: 0.20,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Opacity(
+                            opacity: 0.30,
+                            child: Text(
+                              'LARGE / PROSPECT / PALE GREY',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                                fontFamily: 'Monument',
+                                fontWeight: FontWeight.w400,
+                                letterSpacing: 0.24,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ],
                   )
                 ],
