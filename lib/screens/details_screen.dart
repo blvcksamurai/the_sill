@@ -18,15 +18,15 @@ class DetailsScreen extends StatelessWidget {
         width: size.width,
         child: Stack(
           children: [
-            Container(
-              width: size.width,
-              height: size.height * 0.70,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/haworthia.png'),
-                  fit: BoxFit.fill,
-                ),
-              ),
+            // Container(
+            //   width: size.width,
+            //   height: size.height * 0.70,
+            //   decoration: BoxDecoration(
+            //     image: DecorationImage(
+            //       image: AssetImage('assets/images/haworthia.png'),
+            //       fit: BoxFit.fill,
+            //     ),
+            //   ),
             ),
             Positioned(
               top: size.height * 0.63,
