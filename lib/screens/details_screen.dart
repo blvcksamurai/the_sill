@@ -27,7 +27,7 @@ class DetailsScreen extends StatelessWidget {
             //       fit: BoxFit.fill,
             //     ),
             //   ),
-            ),
+            // ),
             Positioned(
               top: size.height * 0.63,
               child: Stack(
