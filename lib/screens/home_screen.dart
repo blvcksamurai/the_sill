@@ -31,15 +31,15 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SvgPicture.asset('assets/images/sill.svg'),
-                    // InkWell(
-                    //     onTap: () {
-                    //       Navigator.push(
-                    //           context,
-                    //           PageRouteBuilder(
-                    //               pageBuilder: (context, a, b) =>
-                    //                   BestSellers()));
-                    //     },
-                    //     child: SvgPicture.asset('assets/images/union.svg')),
+                    InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              PageRouteBuilder(
+                                  pageBuilder: (context, a, b) =>
+                                      BestSellers()));
+                        },
+                        child: SvgPicture.asset('assets/images/union.svg')),
                   ],
                 ),
                 Center(
