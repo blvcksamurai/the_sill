@@ -86,19 +86,19 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Spacer(),
-                Center(
-                  child: Text(
-                    '\$250 – ADD TO CART',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Color(0xFFC9B79B),
-                      fontSize: 11,
-                      fontFamily: 'Monument',
-                      fontWeight: FontWeight.w400,
-                      letterSpacing: 0.22,
-                    ),
-                  ),
-                )
+                // Center(
+                //   child: Text(
+                //     '\$250 – ADD TO CART',
+                //     textAlign: TextAlign.center,
+                //     style: TextStyle(
+                //       color: Color(0xFFC9B79B),
+                //       fontSize: 11,
+                //       fontFamily: 'Monument',
+                //       fontWeight: FontWeight.w400,
+                //       letterSpacing: 0.22,
+                //     ),
+                //   ),
+                // )
               ],
             ),
           ),
