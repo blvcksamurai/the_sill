@@ -1,8 +1,11 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../widgets/counter.dart';
 import 'best_sellers.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -21,7 +24,7 @@ class DetailsScreen extends StatelessWidget {
             Container(
               width: size.width,
               height: size.height * 0.70,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/haworthia.png'),
                   fit: BoxFit.fill,
@@ -35,7 +38,7 @@ class DetailsScreen extends StatelessWidget {
                   Container(
                     width: size.width,
                     height: size.height * 0.40,
-                    decoration: ShapeDecoration(
+                    decoration: const ShapeDecoration(
                       color: Color(0xff5b5551),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
@@ -52,47 +55,73 @@ class DetailsScreen extends StatelessWidget {
                       Container(
                         width: size.width,
                         height: size.height * 0.30,
-                        child: Image(
+                        child: const Image(
                           image: AssetImage('assets/images/leaf.png'),
                           fit: BoxFit.fill,
                         ),
                       ),
-                      // Column(
-                      //   mainAxisAlignment: MainAxisAlignment.center,
-                      //   children: [
-                      //     Center(
-                      //       child: SizedBox(
-                      //         width: 165,
-                      //         height: 50,
-                      //         child: Text(
-                      //           'Faux Calathea Orbifolia',
-                      //           textAlign: TextAlign.center,
-                      //           style: TextStyle(
-                      //             color: Colors.white,
-                      //             fontSize: 14,
-                      //             fontFamily: 'Monument',
-                      //             fontWeight: FontWeight.w400,
-                      //             letterSpacing: 0.20,
-                      //           ),
-                      //         ),
-                      //       ),
-                      //     ),
-                      //     Opacity(
-                      //       opacity: 0.30,
-                      //       child: Text(
-                      //         'LARGE / PROSPECT / PALE GREY',
-                      //         textAlign: TextAlign.center,
-                      //         style: TextStyle(
-                      //           color: Colors.white,
-                      //           fontSize: 12,
-                      //           fontFamily: 'Monument',
-                      //           fontWeight: FontWeight.w400,
-                      //           letterSpacing: 0.24,
-                      //         ),
-                      //       ),
-                      //     )
-                      //   ],
-                      // ),
+                      Positioned(
+                        left: 70,
+                        top: 20,
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Center(
+                              child: SizedBox(
+                                width: 165,
+                                height: 50,
+                                child: Text(
+                                  'Faux Calathea Orbifolia',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontFamily: 'Monument',
+                                    fontWeight: FontWeight.w400,
+                                    letterSpacing: 0.20,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Opacity(
+                              opacity: 0.30,
+                              child: Text(
+                                'LARGE / PROSPECT / PALE GREY',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                  fontFamily: 'Monument',
+                                  fontWeight: FontWeight.w400,
+                                  letterSpacing: 0.24,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Positioned(
+                        left: 70,
+                        top: 140,
+                        child: Row(
+                          children: [
+                            CustomCounter(),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              'Remove',
+                              style: TextStyle(
+                                color: Color(0xFFD2BEA5),
+                                fontSize: 15,
+                                fontFamily: 'Monument',
+                                fontWeight: FontWeight.w400,
+                                letterSpacing: 0.24,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   )
                 ],
@@ -101,7 +130,8 @@ class DetailsScreen extends StatelessWidget {
             Column(
               children: [
                 Container(
-                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+                    margin: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 25),
                     child: Column(
                       children: [
                         Row(
@@ -113,8 +143,8 @@ class DetailsScreen extends StatelessWidget {
                         ),
                         Center(
                           child: Container(
-                            margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
-                            child: SizedBox(
+                            margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                            child: const SizedBox(
                               width: 165,
                               height: 50,
                               child: Text(
@@ -133,8 +163,8 @@ class DetailsScreen extends StatelessWidget {
                         ),
                         Center(
                           child: Container(
-                            margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
-                            child: SizedBox(
+                            margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                            child: const SizedBox(
                               width: 165,
                               height: 50,
                               child: Text(
@@ -160,7 +190,7 @@ class DetailsScreen extends StatelessWidget {
               child: Container(
                 width: 79.71,
                 height: 32.49,
-                decoration: ShapeDecoration(
+                decoration: const ShapeDecoration(
                   color: Color(0xFFA1AF66),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
@@ -169,7 +199,7 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                child: Center(
+                child: const Center(
                   child: Text(
                     '- 10%',
                     textAlign: TextAlign.center,
