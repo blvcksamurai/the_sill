@@ -123,6 +123,44 @@ class DetailsScreen extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                  Positioned(
+                    height: size.height * 0.67,
+                    left: 70,
+                    child: Row(
+                      children: [
+                        Text(
+                          'SUBTOTAL',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Color(0xFF999490),
+                            fontSize: 14,
+                            fontFamily: 'Monument',
+                            fontWeight: FontWeight.w400,
+                            letterSpacing: 0.24,
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                        Text(
+                          '\$250',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontFamily: 'Monument',
+                            fontWeight: FontWeight.w400,
+                            letterSpacing: 0.32,
+                          ),
+                        ),
+                        SizedBox(width: 40),
+                        IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.arrow_forward,
+                              color: Colors.white,
+                            ))
+                      ],
+                    ),
                   )
                 ],
               ),

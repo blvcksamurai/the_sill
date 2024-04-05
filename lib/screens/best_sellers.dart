@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:the_sill_app/screens/details_screen.dart';
 
 import '../widgets/dropdowns.dart';
 
@@ -104,67 +105,76 @@ class BestSellers extends StatelessWidget {
                               )
                             ],
                           ),
-                          Container(
-                            width: 154,
-                            height: 285.52,
-                            margin: EdgeInsets.only(top: 20),
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: AssetImage('assets/images/gift.png'),
-                                fit: BoxFit.fill,
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  PageRouteBuilder(
+                                      pageBuilder: (context, a, b) =>
+                                          DetailsScreen()));
+                            },
+                            child: Container(
+                              width: 154,
+                              height: 285.52,
+                              margin: EdgeInsets.only(top: 20),
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('assets/images/gift.png'),
+                                  fit: BoxFit.fill,
+                                ),
+                                borderRadius: BorderRadius.circular(30),
                               ),
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  left: 121.86,
-                                  top: 251.17,
-                                  child: SizedBox(
-                                    width: 103.14,
-                                    child: Transform(
-                                      transform: Matrix4.identity()
-                                        ..translate(0.0, 0.0)
-                                        ..rotateZ(-1.57),
-                                      child: Text(
-                                        'SHOP GIFTS',
-                                        textAlign: TextAlign.right,
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 12,
-                                          fontFamily: 'Monument',
-                                          fontWeight: FontWeight.w400,
-                                          letterSpacing: 0.24,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    left: 121.86,
+                                    top: 251.17,
+                                    child: SizedBox(
+                                      width: 103.14,
+                                      child: Transform(
+                                        transform: Matrix4.identity()
+                                          ..translate(0.0, 0.0)
+                                          ..rotateZ(-1.57),
+                                        child: Text(
+                                          'SHOP GIFTS',
+                                          textAlign: TextAlign.right,
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 12,
+                                            fontFamily: 'Monument',
+                                            fontWeight: FontWeight.w400,
+                                            letterSpacing: 0.24,
+                                          ),
                                         ),
                                       ),
                                     ),
                                   ),
-                                ),
-                                Positioned(
-                                  left: 22.10,
-                                  top: 34.63,
-                                  child: SizedBox(
-                                    width: 109.15,
-                                    height: 100.55,
-                                    child: Text(
-                                      'A Gift \nThey Actually Want',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 14,
-                                        fontFamily: 'Monument',
-                                        fontWeight: FontWeight.w400,
-                                        letterSpacing: 0.28,
+                                  Positioned(
+                                    left: 22.10,
+                                    top: 34.63,
+                                    child: SizedBox(
+                                      width: 109.15,
+                                      height: 100.55,
+                                      child: Text(
+                                        'A Gift \nThey Actually Want',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 14,
+                                          fontFamily: 'Monument',
+                                          fontWeight: FontWeight.w400,
+                                          letterSpacing: 0.28,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ),
-                                Positioned(
-                                  left: 22.10,
-                                  top: 191.66,
-                                  child: SvgPicture.asset(
-                                      'assets/images/play.svg'),
-                                )
-                              ],
+                                  Positioned(
+                                    left: 22.10,
+                                    top: 191.66,
+                                    child: SvgPicture.asset(
+                                        'assets/images/play.svg'),
+                                  )
+                                ],
+                              ),
                             ),
                           )
                         ],
