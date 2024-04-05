@@ -10,6 +10,20 @@ class CustomCounter extends StatefulWidget {
 }
 
 class _CustomCounterState extends State<CustomCounter> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  void _decrementCounter() {
+    setState(() {
+      _counter--;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,29 +40,51 @@ class _CustomCounterState extends State<CustomCounter> {
         padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
         child: Row(
           children: [
-            Text(
-              '-',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Color(0xFFD2BEA5),
-                fontSize: 15,
-                fontFamily: 'Monument',
-                fontWeight: FontWeight.w400,
-                letterSpacing: 0.24,
+            InkWell(
+              onTap: _decrementCounter,
+              child: Text(
+                '-',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color(0xFFD2BEA5),
+                  fontSize: 15,
+                  fontFamily: 'Monument',
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 0.24,
+                ),
               ),
             ),
             SizedBox(
               width: 55,
+              child: Center(
+                child: AnimatedOpacity(
+                  opacity: _counter != 0 ? 1.0 : 0.0,
+                  duration: Duration(milliseconds: 500),
+                  child: Text(
+                    '$_counter',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontFamily: 'Monument',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
             ),
-            Text(
-              '+',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Color(0xFFD2BEA5),
-                fontSize: 15,
-                fontFamily: 'Monument',
-                fontWeight: FontWeight.w400,
-                letterSpacing: 0.24,
+            InkWell(
+              onTap: _incrementCounter,
+              child: Text(
+                '+',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color(0xFFD2BEA5),
+                  fontSize: 15,
+                  fontFamily: 'Monument',
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 0.24,
+                ),
               ),
             )
           ],
